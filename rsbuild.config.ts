@@ -10,6 +10,12 @@ export default defineConfig({
       origin: '*',
     },
   },
+  output: {
+    assetPrefix: 'auto',
+    distPath: {
+      root: 'dist'
+    }
+  },
   dev: {
     hmr: true,
     liveReload: true,
@@ -18,6 +24,7 @@ export default defineConfig({
     pluginVue(),
     pluginModuleFederation({
       name: 'remote1',
+      shareStrategy:'version-first',
       exposes: {
         './export-app': './src/export-app.ts',
       },

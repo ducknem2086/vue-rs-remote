@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h1>Rsbuild with Vue remote</h1>
+    <h1>Rsbuild with 111</h1>
     <p>Start building amazing things with Rsbuild.</p>
   </div>
 </template>
